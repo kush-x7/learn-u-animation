@@ -10,9 +10,12 @@ button {
   font-size: 2.8rem;
   color: #f8f4ea;
   background-color: #579bb1;
-  transition-property: all;
-  transition-duration: 3s;
+  /* transition-property: all;
+  transition-duration: 3s; */
   /* transition-delay: 1s; */
+
+  transition: transform 3s ease-in-out, background-color 1s 3s ease-out,
+    color 1s 3s ease-out, border-radius 3s 4s ease-in-out;
 }
 
 #ease {
@@ -35,6 +38,7 @@ button:hover {
   transform: translate(500px, 0);
   background-color: #3c6255;
   color: #eae7b1;
+  border-radius: 50%;
 }
 
 /* transition-timing-function */
