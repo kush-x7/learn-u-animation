@@ -1,14 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 button {
   height: 9rem;
   width: 29rem;
+  margin: 2rem;
   font-size: 2.8rem;
   color: #f8f4ea;
   background-color: #579bb1;
-  transition-property: background-color;
-  transition-duration: 1s;
+  transition-property: all;
+  transition-duration: 3s;
+}
+
+#ease {
+  transition-timing-function: ease;
+}
+#linear {
+  transition-timing-function: linear;
+}
+#ease-in {
+  transition-timing-function: ease-in;
+}
+#ease-out {
+  transition-timing-function: ease-out;
+}
+#ease-in-out {
+  transition-timing-function: ease-in-out;
 }
 
 button:hover {
-  background-color: #3c6255;
-  color: #eae7b1;
+  transform: translate(500px, 0);
+
+  /* background-color: #3c6255;
+  color: #eae7b1; */
 }
+
+/* transition-timing-function */
+
+/* ease(default): the change starts slow then go faster then finishes slow */
+/* linear: the change occurs at the same rate */
+/* ease-in: the change starts slow then go faster before end  */
+/* ease-out: the change starts fast then slows down before the end  */
