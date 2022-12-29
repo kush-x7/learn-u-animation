@@ -1,0 +1,17 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #227c70;
+  transition: transform 6s;
+}
+
+.box:hover {
+  transform: translate(200px, -200px);
+}
